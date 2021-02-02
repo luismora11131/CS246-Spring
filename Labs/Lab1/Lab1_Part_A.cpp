@@ -2,22 +2,6 @@
 #include <string>
 using namespace std;
 
-bool HasDuplicates(double data[])
-{
-  int len = sizeof(data)/sizeof(data[0]);
-  for (int i = 0; i < len; i += 1)
-  {
-    for (int j = i + 1; j < len; j += 1)
-    {
-      if (data[i] == data[j])
-      {
-        return true;
-      }
-    }
-  }
-  return false;
-}
-
 int LetterCount(const string a, char b)
 {
   int count;
@@ -31,6 +15,21 @@ int LetterCount(const string a, char b)
   return count;
 }
 
+bool HasDuplicates(double data[])
+{
+  int len = sizeof(data) / sizeof(data[0]);
+  for (int i = 0; i < len; i += 1)
+  {
+    for (int j = i + 1; j < len; j += 1)
+    {
+      if (data[i] == data[j])
+      {
+        return true;
+      }
+    }
+  }
+  return false;
+}
 int main()
 {
 }
