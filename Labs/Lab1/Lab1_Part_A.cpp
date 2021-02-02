@@ -18,7 +18,7 @@ bool HasDuplicates(double data[])
   return false;
 }
 
-int LetterCount(const a, char b)
+int LetterCount(const string a, char b)
 {
   int count;
   for (int i = 0; i < a.length(); i++)
