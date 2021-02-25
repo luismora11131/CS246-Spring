@@ -32,7 +32,7 @@ ulong IndexOfValueAfter(const Array<T> &data, const T &value, const T &delimit)
 		{
 			after = true;
 		}
-		if (after == true;)
+		if (after == true)
 		{
 			if (data[i] == value)
 			{
