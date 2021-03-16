@@ -1,0 +1,16 @@
+Table: Student
+
+Attributes
++ FirstName : Domain(word), Default("")
++ LastName : Domain(word), Default("")
++ Id : Domain(id), Default(1)
++ Email : Domain(email), Default("user@domain.com")
+
+Key
++ (Id)
+
+Constraints
++ The word domain contains strings that only consist of letters or the empty string.
++ The id domain contains only positive integers.
++ The email domain contains strings of the format 1 or more letters and/or digits followed by '@' followed
+by 1 or more letters followed by '.' followed by between 1 to 4 letters inclusively.
