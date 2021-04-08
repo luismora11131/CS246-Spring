@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 #include "Node.h"
-#include "Interface"
+#include "Interface.h"
 
 using ulong = unsigned long;
 
