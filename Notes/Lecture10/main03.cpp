@@ -59,6 +59,7 @@ bool RookPath(char board[],int s,int e)
 		{
 			v = q.Peek();
 			q.Dequeue();
+			visited[v] = true;
 
 			if(v == e || (v + 8) == e || (v - 8) == e || (v + 1) == e || (v - 1) == e)
 			{
@@ -91,6 +92,7 @@ bool RookPath(char board[],int s,int e)
 
 int main()
 {
+	srand(time(NULL));
 	int s, e;
 	char b[64];
 
