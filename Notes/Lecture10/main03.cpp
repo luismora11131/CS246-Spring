@@ -80,7 +80,7 @@ bool RookPath(char board[],int s,int e)
 				q.Enqueue(v+1);
 			}
 			
-			if(v - 1 >= 0 && board[v-1] != 'o' && !visited[v-1])
+			if(v - 1 >= 0 && v % 8 != 0 && board[v-1] != 'o' && !visited[v-1])
 			{
 				q.Enqueue(v-1);
 			}
