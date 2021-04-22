@@ -53,7 +53,6 @@ bool RookPath(char board[],int s,int e)
 		}
 
 		q.Enqueue(s);
-		visited[s] = true;
 
 		while(!q.IsEmpty())
 		{
@@ -76,7 +75,7 @@ bool RookPath(char board[],int s,int e)
 				q.Enqueue(v-8);
 			}
 			
-			if(v + 1 < 64 && board[v+1] != 'o' && !visited[v+1])
+			if(v + 1 < 64  && v % 8 != 7 && board[v+1] != 'o' && !visited[v+1])
 			{
 				q.Enqueue(v+1);
 			}
@@ -86,6 +85,7 @@ bool RookPath(char board[],int s,int e)
 				q.Enqueue(v-1);
 			}
 		}
+		return false;
 	}
 	return false;
 }
