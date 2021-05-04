@@ -5,6 +5,11 @@
 #include <string>
 #include "Node.h"
 
+//Array Tree Macros
+#define PARENT(X)	(((X) - 1) / 2)
+#define LEFT(X)		(2 * (X) + 1)
+#define RIGHT(X)	(2 * (X) + 2)
+
 //Tree Traversals
 
 template<typename T>

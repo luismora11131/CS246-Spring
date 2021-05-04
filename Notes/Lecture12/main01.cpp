@@ -21,6 +21,5 @@ int main()
 	PostfixPrint(r);
 	std::cout << "\n";
  
-	ds::tn::Clear(r);
 	return 0;
 }
