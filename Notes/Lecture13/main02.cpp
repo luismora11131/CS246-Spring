@@ -65,7 +65,7 @@ void Insert(ds::tn::Node<T>*& rt,const T& itm)
 
 		while(c > 0)
 		{
-			if(path[c] % 2 == 1)
+			if(path[c-1] % 2 == 1)
 			{
 				t = t->left;
 			}
@@ -113,7 +113,7 @@ int main()
 	int n;
 
 	RandomTree(a,7);
-	std::cout << "Before Sort:\n";
+	std::cout << "Tree Members:\n";
 	Print(a);
 	std::cout << "\n";
 
